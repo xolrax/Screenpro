@@ -1,0 +1,4 @@
+ruta_archivopub = "pubmed_gemelos.txt"        # Archivo PubMed
+ruta_archivoscopus = "gemelo_digital_scopus.bib"          # Archivo Scopus
+archivo_sal_screen = "res_screaning1.xlsx"   # Archivo de resultados
+rutaprompt1 = "prompt_gemelo.txt"            # Archivo de prompt

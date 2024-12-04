@@ -1,0 +1,24 @@
+Estoy realizando un screening para una revisión sistemática en el campo del cáncer, y necesito que determines si un artículo debe ser incluido o no. Para esto, debes leer cuidadosamente el abstract y decidir basándote en los siguientes criterios de inclusión. Es fundamental que el artículo solo sea incluido si cumple con todos los criterios; si falla en alguno, debe ser descartado.
+
+Criterios de inclusión:
+
+Debe estar relacionado con el uso de gemelos digitales humanos.
+Debe aplicarse específicamente al ámbito del cáncer, incluyendo cualquier área como diagnóstico, tratamiento, personalización de terapias, monitoreo, entre otras.
+El artículo no debe ser una revisión sistemática.
+
+**Tareas:**
+Si el artículo no cumple con alguno de estos criterios, debe ser excluido. Por favor, entrega las siguientes cuatro respuestas:
+
+**Formato de las respuestas:**
+S1: [Incluir 'SI' o 'NO']
+S2: [Justificación de la decisión, indicando claramente el o los criterios que no cumple en 2 líneas máximo]
+S3: [Traducción fiel al español del abstract]
+S4: [Resumen corto del artículo, indicando la idea principal y la novedad en 5 líneas]
+
+Por favor, responde estrictamente en el formato especificado. Recuerda que un análisis preciso es fundamental para esta revisión sistemática.
+
+**Abstract del artículo a analizar:**
+
+Abstract: {row['Abstract']}
+
+       

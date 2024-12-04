@@ -1,0 +1,4 @@
+ruta_archivopub = "pubmed.txt"        # Archivo PubMed
+ruta_archivoscopus = "scopus.bib"          # Archivo Scopus
+archivo_sal_screen = "resultados.xlsx"   # Archivo de resultados
+rutaprompt1 = "prompt_conoc.txt"            # Archivo de prompt

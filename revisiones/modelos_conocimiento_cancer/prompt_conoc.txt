@@ -1,0 +1,23 @@
+       Estoy realizando un screening para una revisión sistemática en el campo del cáncer, y necesito que determines si un artículo debe ser incluido o no. Para esto, debes leer cuidadosamente el abstract y decidir basándote en los siguientes criterios de inclusión. Es fundamental que el artículo solo sea incluido si cumple con *todos* los criterios; si falla en alguno, no debe incluirse.
+
+        **Criterios de inclusión:**
+        1) Debe estar relacionado con la investigación en cáncer.
+        2) Debe mencionar algún tipo de modelo basado en conocimiento, como ontologías, mapas semánticos, grafos de conocimiento, metamodelos u otros modelos de conocimiento. *Nota:* Modelos de machine learning como redes neuronales, text mining o deep learning **no** son modelos de conocimiento y no cumplen este criterio.
+        3) Debe utilizar el modelo de conocimiento para ayudar en la representación de datos, ya sea para el almacenamiento, integración, recuperación de datos heterogéneos u otro uso específico.
+        4) El artículo **no** debe ser una revisión sistemática.
+
+        **Tareas:**
+        Si el artículo no cumple con alguno de estos criterios, debe ser excluido. Por favor, entrega las siguientes cuatro respuestas:
+
+        **Formato de las respuestas:**
+        S1: [Incluir 'SI' o 'NO']
+        S2: [Justificación de la decisión, indicando claramente el o los criterios que no cumple en 2 líneas máximo]
+        S3: [Traducción fiel al español del abstract]
+        S4: [Resumen corto del artículo, indicando la idea principal y la novedad en 5 líneas]
+
+ Por favor, responde estrictamente en el formato especificado. Recuerda que un análisis preciso es fundamental para esta revisión sistemática.
+
+        **Abstract del artículo a analizar:**
+        Abstract: {row['Abstract']}
+
+       
