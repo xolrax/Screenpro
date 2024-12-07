@@ -88,8 +88,8 @@ def renombrar_archivos_pdf(ruta_carpeta, ruta_excel, sanitizar=True):
         for original, nuevo, resultado in nombres_originales:
             archivo.write(f"{original} -> {nuevo} : {resultado}\n")  # Escribir el resultado de cada operación
 
-# Ejemplo de uso
-ruta_carpeta = "ruta/a/tu/carpeta"
-ruta_excel = "ruta/a/tu/archivo.xlsx"
-crear_archivo_excel(ruta_carpeta, ruta_excel)
-renombrar_archivos_pdf(ruta_carpeta, ruta_excel, sanitizar=True)
+# # Ejemplo de uso
+# ruta_carpeta = "ruta/a/tu/carpeta"
+# ruta_excel = "ruta/a/tu/archivo.xlsx"
+# crear_archivo_excel(ruta_carpeta, ruta_excel)
+# renombrar_archivos_pdf(ruta_carpeta, ruta_excel, sanitizar=True)

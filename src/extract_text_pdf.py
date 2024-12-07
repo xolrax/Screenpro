@@ -114,17 +114,17 @@ def save_text_details_to_json(text_details, output_path):
     except (OSError, TypeError) as e:
         print(f"Error al guardar el archivo JSON: {e}")
 
-# Ejemplo de uso
-def main():
-    pdf_path = r"C:\Users\xalve\Desktop\Ej_PDF\Liquidación.pdf"
-    output_json_path1 = r"C:\Users\xalve\Desktop\Ej_PDF\details.json"
-    output_json_path2 = r"C:\Users\xalve\Desktop\Ej_PDF\details_block.json"
+# # Ejemplo de uso
+# def main():
+#     pdf_path = r"C:\Users\xalve\Desktop\Ej_PDF\Liquidación.pdf"
+#     output_json_path1 = r"C:\Users\xalve\Desktop\Ej_PDF\details.json"
+#     output_json_path2 = r"C:\Users\xalve\Desktop\Ej_PDF\details_block.json"
 
-    text_details1 = extract_text_with_details(pdf_path)
-    text_details2 = extract_text_with_details_block(pdf_path)
-    if text_details1:
-        save_text_details_to_json(text_details1, output_json_path1)
-    if text_details2:
-        save_text_details_to_json(text_details2, output_json_path2)
-if __name__ == "__main__":
-    main()
+#     text_details1 = extract_text_with_details(pdf_path)
+#     text_details2 = extract_text_with_details_block(pdf_path)
+#     if text_details1:
+#         save_text_details_to_json(text_details1, output_json_path1)
+#     if text_details2:
+#         save_text_details_to_json(text_details2, output_json_path2)
+# if __name__ == "__main__":
+#     main()
