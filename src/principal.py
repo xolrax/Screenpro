@@ -10,7 +10,7 @@ import os
 
 ####ACA CAMBIAR####
 proyecto = "gemelos_digitales_cancer"
-rutaapi=  "C:\\UNAB\\LLM\\Mi_Api.txt"
+rutaapi=  r"C:\Users\xalve\OneDrive\Documentos\API GTP\Mi_Api.txt"
 ########################
 
 
