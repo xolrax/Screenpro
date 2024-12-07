@@ -1,5 +1,4 @@
 # Ignora los archivos relacionados a API keys
 .env
 *.pptx
-src/Pruebas.py
-src/principal2.py
+/pruebas
