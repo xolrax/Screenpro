@@ -17,7 +17,7 @@ def cargar_api_key(api_key_path):
 
 def quest_gpt(textin):
     """
-    Esta función interactúa con la API de OpenAI para generar respuestas utilizando el modelo gpt-3.5-turbo.
+    Esta función interactúa con la API de OpenAI para generar respuestas utilizando el modelo gpt-4o-mini.
     
     Entrada:
     - textin: String con el contenido del mensaje que se enviará al modelo.
@@ -38,3 +38,26 @@ def quest_gpt(textin):
     varout=choice.message.content
     return varout
 # Extrae contenido total
+
+def generar_resumen(parrafo, num_lineas):
+    """
+    Genera un resumen breve del párrafo de entrada utilizando quest_gpt.
+    
+    Entrada:
+    - parrafo: String que representa el párrafo a resumir.
+    - num_lineas: Entero que indica el número de líneas deseadas en el resumen.
+
+    Salida:
+    - resumen: String que representa el resumen generado.
+    """
+    prompt = (
+        f"Resume el siguiente texto en {num_lineas} línea(s):\n"
+        f"{parrafo}"
+    )
+    return quest_gpt(prompt)
+
+# Ejemplo de uso:
+# cargar_api_key("ruta/al/archivo/api_key.txt")
+# parrafo = "Este es un ejemplo de texto que necesita ser resumido para demostrar la funcionalidad de la función generar_resumen."
+# resumen = generar_resumen(parrafo, 2)
+# print(resumen)
