@@ -11,8 +11,8 @@ def crear_archivo_excel(ruta_carpeta, ruta_excel):
     """
     Crea un archivo Excel con dos columnas: 'Nombre Original' y 'Nombre Nuevo'.
 
-    La primera columna contiene los nombres originales de los archivos PDF encontrados en la carpeta especificada,
-    y la segunda columna se deja vacía para que el usuario pueda completar los nuevos nombres.
+    La primera columna contiene los nombres originales de los archivos PDF encontrados en la carpeta especificada, 
+    incluyendo la terminación '.pdf', y la segunda columna se deja vacía para que el usuario pueda completar los nuevos nombres.
 
     Parámetros:
     ruta_carpeta (str): La ruta a la carpeta que contiene los archivos PDF.
@@ -76,7 +76,13 @@ def renombrar_archivos_pdf(ruta_carpeta, ruta_excel, sanitizar=True):
     # Renombrar cada archivo con el nombre del Excel
     for _, row in df.iterrows():
         nombre_original = row['Nombre Original']
-        nombre_nuevo = row['Nombre Nuevo'].strip()
+        if pd.notna(row['Nombre Nuevo']) and row['Nombre Nuevo'].strip():
+            nombre_nuevo = row['Nombre Nuevo'].strip()
+        else:
+            nombre_nuevo = nombre_original
+            nombres_originales.append((nombre_original, nombre_original, "No renombrado"))
+            print(f"El archivo {nombre_original} no se renombró porque no se proporcionó un nuevo nombre.")
+            continue
         # Sanitizar el nuevo nombre del archivo si la opción está habilitada
         if sanitizar:
             nombre_nuevo = sanitizar_nombre_archivo(nombre_nuevo)
