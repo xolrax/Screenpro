@@ -8,6 +8,19 @@ def sanitizar_nombre_archivo(nombre):
     return re.sub(r'[^a-zA-Z0-9_\-]', '_', nombre)
 
 def crear_archivo_excel(ruta_carpeta, ruta_excel):
+    """
+    Crea un archivo Excel con dos columnas: 'Nombre Original' y 'Nombre Nuevo'.
+
+    La primera columna contiene los nombres originales de los archivos PDF encontrados en la carpeta especificada,
+    y la segunda columna se deja vacía para que el usuario pueda completar los nuevos nombres.
+
+    Parámetros:
+    ruta_carpeta (str): La ruta a la carpeta que contiene los archivos PDF.
+    ruta_excel (str): La ruta donde se guardará el archivo Excel generado.
+
+    Excepciones:
+    FileNotFoundError: Si la carpeta especificada no existe o no contiene archivos PDF.
+    """
     # Verificar si la ruta de la carpeta existe
     if not os.path.exists(ruta_carpeta):
         raise FileNotFoundError("Error: La ruta de la carpeta no existe.")
