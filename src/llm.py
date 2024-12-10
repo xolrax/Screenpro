@@ -39,7 +39,7 @@ def quest_gpt(textin):
     return varout
 # Extrae contenido total
 
-def generar_resumen(parrafo, num_lineas):
+def resumir_parrafo(parrafo, num_lineas):
     """
     Genera un resumen breve del párrafo de entrada utilizando quest_gpt.
     
@@ -58,6 +58,6 @@ def generar_resumen(parrafo, num_lineas):
 
 # Ejemplo de uso:
 # cargar_api_key("ruta/al/archivo/api_key.txt")
-# parrafo = "Este es un ejemplo de texto que necesita ser resumido para demostrar la funcionalidad de la función generar_resumen."
-# resumen = generar_resumen(parrafo, 2)
+# parrafo = "Este es un ejemplo de texto que necesita ser resumido para demostrar la funcionalidad de la función resumir_parrafo."
+# resumen = resumir_parrafo(parrafo, 2)
 # print(resumen)
